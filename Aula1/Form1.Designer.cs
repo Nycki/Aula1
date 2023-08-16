@@ -29,69 +29,226 @@
         private void InitializeComponent()
         {
             this.btnMenssage = new System.Windows.Forms.Button();
-            this.lbl1 = new System.Windows.Forms.Label();
+            this.lblNome = new System.Windows.Forms.Label();
             this.txbNome = new System.Windows.Forms.TextBox();
-            this.txbPront = new System.Windows.Forms.TextBox();
-            this.lbl2 = new System.Windows.Forms.Label();
+            this.txbSenha = new System.Windows.Forms.TextBox();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.lblCPF = new System.Windows.Forms.Label();
+            this.mtbCPF = new System.Windows.Forms.MaskedTextBox();
+            this.lblTelefone = new System.Windows.Forms.Label();
+            this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.lblSala = new System.Windows.Forms.Label();
+            this.mtbSala = new System.Windows.Forms.MaskedTextBox();
+            this.mtbHE = new System.Windows.Forms.MaskedTextBox();
+            this.lblHE = new System.Windows.Forms.Label();
+            this.mtbHS = new System.Windows.Forms.MaskedTextBox();
+            this.lblHS = new System.Windows.Forms.Label();
+            this.lblData = new System.Windows.Forms.Label();
+            this.mtbData = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // btnMenssage
             // 
             this.btnMenssage.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnMenssage.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenssage.Location = new System.Drawing.Point(289, 164);
+            this.btnMenssage.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenssage.Location = new System.Drawing.Point(59, 405);
             this.btnMenssage.Name = "btnMenssage";
-            this.btnMenssage.Size = new System.Drawing.Size(101, 32);
-            this.btnMenssage.TabIndex = 0;
+            this.btnMenssage.Size = new System.Drawing.Size(109, 26);
+            this.btnMenssage.TabIndex = 9;
             this.btnMenssage.Text = "CONFIRMA";
             this.btnMenssage.UseVisualStyleBackColor = false;
             this.btnMenssage.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lbl1
+            // lblNome
             // 
-            this.lbl1.AutoSize = true;
-            this.lbl1.Location = new System.Drawing.Point(42, 34);
-            this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(39, 13);
-            this.lbl1.TabIndex = 1;
-            this.lbl1.Text = "NOME";
-            this.lbl1.Click += new System.EventHandler(this.label1_Click);
+            this.lblNome.AutoSize = true;
+            this.lblNome.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblNome.Location = new System.Drawing.Point(57, 76);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(39, 13);
+            this.lblNome.TabIndex = 1;
+            this.lblNome.Text = "NOME";
+            this.lblNome.Click += new System.EventHandler(this.label1_Click);
             // 
             // txbNome
             // 
-            this.txbNome.Location = new System.Drawing.Point(45, 63);
+            this.txbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbNome.Location = new System.Drawing.Point(59, 92);
             this.txbNome.Name = "txbNome";
-            this.txbNome.Size = new System.Drawing.Size(345, 20);
-            this.txbNome.TabIndex = 2;
+            this.txbNome.Size = new System.Drawing.Size(242, 20);
+            this.txbNome.TabIndex = 1;
+            this.txbNome.TextChanged += new System.EventHandler(this.txbNome_TextChanged);
             // 
-            // txbPront
+            // txbSenha
             // 
-            this.txbPront.Location = new System.Drawing.Point(45, 129);
-            this.txbPront.Name = "txbPront";
-            this.txbPront.Size = new System.Drawing.Size(345, 20);
-            this.txbPront.TabIndex = 4;
+            this.txbSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSenha.Location = new System.Drawing.Point(59, 369);
+            this.txbSenha.Name = "txbSenha";
+            this.txbSenha.PasswordChar = '*';
+            this.txbSenha.Size = new System.Drawing.Size(242, 20);
+            this.txbSenha.TabIndex = 8;
+            this.txbSenha.TextChanged += new System.EventHandler(this.txbPront_TextChanged);
             // 
-            // lbl2
+            // lblSenha
             // 
-            this.lbl2.AutoSize = true;
-            this.lbl2.Location = new System.Drawing.Point(42, 100);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(77, 13);
-            this.lbl2.TabIndex = 3;
-            this.lbl2.Text = "PRONTIARIO ";
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSenha.Location = new System.Drawing.Point(57, 347);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(44, 13);
+            this.lblSenha.TabIndex = 3;
+            this.lblSenha.Text = "SENHA";
+            this.lblSenha.Click += new System.EventHandler(this.lbl2_Click);
+            // 
+            // lblCPF
+            // 
+            this.lblCPF.AutoSize = true;
+            this.lblCPF.Location = new System.Drawing.Point(56, 130);
+            this.lblCPF.Name = "lblCPF";
+            this.lblCPF.Size = new System.Drawing.Size(27, 13);
+            this.lblCPF.TabIndex = 29;
+            this.lblCPF.Text = "CPF";
+            // 
+            // mtbCPF
+            // 
+            this.mtbCPF.Location = new System.Drawing.Point(59, 153);
+            this.mtbCPF.Mask = "000,000,000-00";
+            this.mtbCPF.Name = "mtbCPF";
+            this.mtbCPF.Size = new System.Drawing.Size(100, 20);
+            this.mtbCPF.TabIndex = 2;
+            // 
+            // lblTelefone
+            // 
+            this.lblTelefone.AutoSize = true;
+            this.lblTelefone.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblTelefone.Location = new System.Drawing.Point(198, 130);
+            this.lblTelefone.Name = "lblTelefone";
+            this.lblTelefone.Size = new System.Drawing.Size(63, 13);
+            this.lblTelefone.TabIndex = 31;
+            this.lblTelefone.Text = "TELEFONE";
+            // 
+            // mtbTelefone
+            // 
+            this.mtbTelefone.Location = new System.Drawing.Point(201, 153);
+            this.mtbTelefone.Mask = "(00) 0 0000-0000";
+            this.mtbTelefone.Name = "mtbTelefone";
+            this.mtbTelefone.Size = new System.Drawing.Size(100, 20);
+            this.mtbTelefone.TabIndex = 3;
+            // 
+            // lblSala
+            // 
+            this.lblSala.AutoSize = true;
+            this.lblSala.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblSala.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSala.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSala.Location = new System.Drawing.Point(58, 192);
+            this.lblSala.Name = "lblSala";
+            this.lblSala.Size = new System.Drawing.Size(34, 13);
+            this.lblSala.TabIndex = 34;
+            this.lblSala.Text = "SALA";
+            // 
+            // mtbSala
+            // 
+            this.mtbSala.Location = new System.Drawing.Point(59, 208);
+            this.mtbSala.Mask = "000";
+            this.mtbSala.Name = "mtbSala";
+            this.mtbSala.Size = new System.Drawing.Size(33, 20);
+            this.mtbSala.TabIndex = 4;
+            // 
+            // mtbHE
+            // 
+            this.mtbHE.Location = new System.Drawing.Point(61, 258);
+            this.mtbHE.Mask = "00:00";
+            this.mtbHE.Name = "mtbHE";
+            this.mtbHE.Size = new System.Drawing.Size(31, 20);
+            this.mtbHE.TabIndex = 6;
+            this.mtbHE.ValidatingType = typeof(System.DateTime);
+            // 
+            // lblHE
+            // 
+            this.lblHE.AutoSize = true;
+            this.lblHE.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblHE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHE.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblHE.Location = new System.Drawing.Point(58, 242);
+            this.lblHE.Name = "lblHE";
+            this.lblHE.Size = new System.Drawing.Size(130, 13);
+            this.lblHE.TabIndex = 36;
+            this.lblHE.Text = "HORARIO DE ENTRADA";
+            // 
+            // mtbHS
+            // 
+            this.mtbHS.Location = new System.Drawing.Point(61, 308);
+            this.mtbHS.Mask = "00:00";
+            this.mtbHS.Name = "mtbHS";
+            this.mtbHS.Size = new System.Drawing.Size(33, 20);
+            this.mtbHS.TabIndex = 7;
+            this.mtbHS.ValidatingType = typeof(System.DateTime);
+            // 
+            // lblHS
+            // 
+            this.lblHS.AutoSize = true;
+            this.lblHS.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lblHS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHS.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblHS.Location = new System.Drawing.Point(58, 292);
+            this.lblHS.Name = "lblHS";
+            this.lblHS.Size = new System.Drawing.Size(110, 13);
+            this.lblHS.TabIndex = 38;
+            this.lblHS.Text = "HORARIO DE SAIDA";
+            // 
+            // lblData
+            // 
+            this.lblData.AutoSize = true;
+            this.lblData.Location = new System.Drawing.Point(198, 192);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(36, 13);
+            this.lblData.TabIndex = 40;
+            this.lblData.Text = "DATA";
+            // 
+            // mtbData
+            // 
+            this.mtbData.Location = new System.Drawing.Point(201, 208);
+            this.mtbData.Mask = "00/00/0000";
+            this.mtbData.Name = "mtbData";
+            this.mtbData.Size = new System.Drawing.Size(100, 20);
+            this.mtbData.TabIndex = 5;
+            this.mtbData.ValidatingType = typeof(System.DateTime);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 285);
-            this.Controls.Add(this.txbPront);
-            this.Controls.Add(this.lbl2);
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.mtbData);
+            this.Controls.Add(this.lblData);
+            this.Controls.Add(this.mtbHS);
+            this.Controls.Add(this.lblHS);
+            this.Controls.Add(this.mtbHE);
+            this.Controls.Add(this.lblHE);
+            this.Controls.Add(this.mtbSala);
+            this.Controls.Add(this.lblSala);
+            this.Controls.Add(this.mtbTelefone);
+            this.Controls.Add(this.lblTelefone);
+            this.Controls.Add(this.mtbCPF);
+            this.Controls.Add(this.lblCPF);
+            this.Controls.Add(this.txbSenha);
+            this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.txbNome);
-            this.Controls.Add(this.lbl1);
+            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.btnMenssage);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MaximumSize = new System.Drawing.Size(1080, 720);
+            this.MinimumSize = new System.Drawing.Size(1080, 720);
             this.Name = "Form1";
             this.Text = " ";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -100,10 +257,22 @@
         #endregion
 
         private System.Windows.Forms.Button btnMenssage;
-        private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txbNome;
-        private System.Windows.Forms.TextBox txbPront;
-        private System.Windows.Forms.Label lbl2;
+        private System.Windows.Forms.TextBox txbSenha;
+        private System.Windows.Forms.Label lblSenha;
+        private System.Windows.Forms.Label lblCPF;
+        private System.Windows.Forms.MaskedTextBox mtbCPF;
+        private System.Windows.Forms.Label lblTelefone;
+        private System.Windows.Forms.MaskedTextBox mtbTelefone;
+        private System.Windows.Forms.Label lblSala;
+        private System.Windows.Forms.MaskedTextBox mtbSala;
+        private System.Windows.Forms.MaskedTextBox mtbHE;
+        private System.Windows.Forms.Label lblHE;
+        private System.Windows.Forms.MaskedTextBox mtbHS;
+        private System.Windows.Forms.Label lblHS;
+        private System.Windows.Forms.Label lblData;
+        private System.Windows.Forms.MaskedTextBox mtbData;
     }
 }
 

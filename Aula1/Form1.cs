@@ -20,14 +20,25 @@ namespace Aula1
         private void button1_Click(object sender, EventArgs e)
         {
             string nome = txbNome.Text;
-            string pront = txbPront.Text;
+            string senha = txbSenha.Text;
+            string CPF = mtbCPF.Text;
+            string telefone= mtbTelefone.Text;
+            string sala = mtbSala.Text;
+            string data= mtbData.Text;
+            string HE= mtbHE.Text;
+            string HS= mtbHS.Text;
 
-            string mensagem = "Nome: " + nome +
-                "Matricula: " + pront;
+
+            string mensagem = "NOME: " + nome +
+                "\nSALA: " + sala +
+                "\nDATA: " + data +
+                "\nHORARIO DE ENTRADA: " + HE +
+                "\nHORARIO DE SAIDA: " + HS +
+                "\nSUA SALA FOI ALOCADA ";
+
 
             MessageBox.Show(
                 mensagem,
-                "Você clicou!",
                 "ATENÇÃO",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
@@ -35,6 +46,40 @@ namespace Aula1
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+               "OU TA SEDO AINDA",
+               "????",
+               MessageBoxButtons.YesNo,
+               MessageBoxIcon.Information);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbl2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbPront_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
