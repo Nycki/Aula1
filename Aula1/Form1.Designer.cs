@@ -36,15 +36,15 @@
             this.lblCPF = new System.Windows.Forms.Label();
             this.mtbCPF = new System.Windows.Forms.MaskedTextBox();
             this.lblTelefone = new System.Windows.Forms.Label();
-            this.mtbTelefone = new System.Windows.Forms.MaskedTextBox();
             this.lblSala = new System.Windows.Forms.Label();
             this.mtbSala = new System.Windows.Forms.MaskedTextBox();
-            this.mtbHE = new System.Windows.Forms.MaskedTextBox();
             this.lblHE = new System.Windows.Forms.Label();
-            this.mtbHS = new System.Windows.Forms.MaskedTextBox();
             this.lblHS = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.mtbData = new System.Windows.Forms.MaskedTextBox();
+            this.mtbTelefone = new System.Windows.Forms.TextBox();
+            this.mtbHE = new System.Windows.Forms.TextBox();
+            this.mtbHS = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnMenssage
@@ -132,14 +132,6 @@
             this.lblTelefone.TabIndex = 31;
             this.lblTelefone.Text = "TELEFONE";
             // 
-            // mtbTelefone
-            // 
-            this.mtbTelefone.Location = new System.Drawing.Point(201, 153);
-            this.mtbTelefone.Mask = "(00) 0 0000-0000";
-            this.mtbTelefone.Name = "mtbTelefone";
-            this.mtbTelefone.Size = new System.Drawing.Size(100, 20);
-            this.mtbTelefone.TabIndex = 3;
-            // 
             // lblSala
             // 
             this.lblSala.AutoSize = true;
@@ -160,15 +152,6 @@
             this.mtbSala.Size = new System.Drawing.Size(33, 20);
             this.mtbSala.TabIndex = 4;
             // 
-            // mtbHE
-            // 
-            this.mtbHE.Location = new System.Drawing.Point(61, 258);
-            this.mtbHE.Mask = "00:00";
-            this.mtbHE.Name = "mtbHE";
-            this.mtbHE.Size = new System.Drawing.Size(31, 20);
-            this.mtbHE.TabIndex = 6;
-            this.mtbHE.ValidatingType = typeof(System.DateTime);
-            // 
             // lblHE
             // 
             this.lblHE.AutoSize = true;
@@ -180,15 +163,6 @@
             this.lblHE.Size = new System.Drawing.Size(130, 13);
             this.lblHE.TabIndex = 36;
             this.lblHE.Text = "HORARIO DE ENTRADA";
-            // 
-            // mtbHS
-            // 
-            this.mtbHS.Location = new System.Drawing.Point(61, 308);
-            this.mtbHS.Mask = "00:00";
-            this.mtbHS.Name = "mtbHS";
-            this.mtbHS.Size = new System.Drawing.Size(33, 20);
-            this.mtbHS.TabIndex = 7;
-            this.mtbHS.ValidatingType = typeof(System.DateTime);
             // 
             // lblHS
             // 
@@ -220,21 +194,45 @@
             this.mtbData.TabIndex = 5;
             this.mtbData.ValidatingType = typeof(System.DateTime);
             // 
+            // mtbTelefone
+            // 
+            this.mtbTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtbTelefone.Location = new System.Drawing.Point(201, 153);
+            this.mtbTelefone.Name = "mtbTelefone";
+            this.mtbTelefone.Size = new System.Drawing.Size(100, 20);
+            this.mtbTelefone.TabIndex = 3;
+            // 
+            // mtbHE
+            // 
+            this.mtbHE.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtbHE.Location = new System.Drawing.Point(61, 262);
+            this.mtbHE.Name = "mtbHE";
+            this.mtbHE.Size = new System.Drawing.Size(35, 20);
+            this.mtbHE.TabIndex = 6;
+            // 
+            // mtbHS
+            // 
+            this.mtbHS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mtbHS.Location = new System.Drawing.Point(61, 314);
+            this.mtbHS.Name = "mtbHS";
+            this.mtbHS.Size = new System.Drawing.Size(35, 20);
+            this.mtbHS.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.mtbHS);
+            this.Controls.Add(this.mtbHE);
+            this.Controls.Add(this.mtbTelefone);
             this.Controls.Add(this.mtbData);
             this.Controls.Add(this.lblData);
-            this.Controls.Add(this.mtbHS);
             this.Controls.Add(this.lblHS);
-            this.Controls.Add(this.mtbHE);
             this.Controls.Add(this.lblHE);
             this.Controls.Add(this.mtbSala);
             this.Controls.Add(this.lblSala);
-            this.Controls.Add(this.mtbTelefone);
             this.Controls.Add(this.lblTelefone);
             this.Controls.Add(this.mtbCPF);
             this.Controls.Add(this.lblCPF);
@@ -264,15 +262,15 @@
         private System.Windows.Forms.Label lblCPF;
         private System.Windows.Forms.MaskedTextBox mtbCPF;
         private System.Windows.Forms.Label lblTelefone;
-        private System.Windows.Forms.MaskedTextBox mtbTelefone;
         private System.Windows.Forms.Label lblSala;
         private System.Windows.Forms.MaskedTextBox mtbSala;
-        private System.Windows.Forms.MaskedTextBox mtbHE;
         private System.Windows.Forms.Label lblHE;
-        private System.Windows.Forms.MaskedTextBox mtbHS;
         private System.Windows.Forms.Label lblHS;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.MaskedTextBox mtbData;
+        private System.Windows.Forms.TextBox mtbTelefone;
+        private System.Windows.Forms.TextBox mtbHE;
+        private System.Windows.Forms.TextBox mtbHS;
     }
 }
 

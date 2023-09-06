@@ -20,6 +20,8 @@ namespace Aula1
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+
             Connection connection= new Connection();
             SqlCommand  sqlCommand = new SqlCommand();
             sqlCommand.Connection = connection.ReturnConnection();
@@ -38,29 +40,19 @@ namespace Aula1
 
             sqlCommand.ExecuteNonQuery();
 
-            //string nome = txbNome.Text;
-            //string senha = txbSenha.Text;
-            //string CPF = mtbCPF.Text;
-            //string telefone= mtbTelefone.Text;
-            //string sala = mtbSala.Text;
-            //string data= mtbData.Text;
-            //string HE= mtbHE.Text;
-            //string HS= mtbHS.Text;
+            MessageBox.Show("ALOCADA COM SUCESSO",
+                "AVISO",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
 
-
-            //string mensagem = "NOME: " + nome +
-            //    "\nSALA: " + sala +
-            //    "\nDATA: " + data +
-            //    "\nHORARIO DE ENTRADA: " + HE +
-            //    "\nHORARIO DE SAIDA: " + HS +
-            //    "\nSUA SALA FOI ALOCADA ";
-
-
-            //MessageBox.Show(
-            //    mensagem,
-            //    "ATENÇÃO",
-            //    MessageBoxButtons.OK,
-            //    MessageBoxIcon.Information);
+            txbNome.Clear();
+            mtbCPF.Clear();
+            mtbTelefone.Clear();
+            mtbSala.Clear();
+            mtbHE.Clear();
+            mtbHS.Clear();
+            txbSenha.Clear();
+            mtbData.Clear();
 
         }
 
