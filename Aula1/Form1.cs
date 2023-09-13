@@ -18,6 +18,53 @@ namespace Aula1
             InitializeComponent();
         }
 
+        private void UpdateListView()
+        {
+            TABELA.Items.Clear();
+
+            Connection conn = new Connection();
+            SqlCommand sqlCom = new SqlCommand();
+
+            sqlCom.Connection = conn.ReturnConnection();
+            sqlCom.CommandText = "SELECT * FROM SITE";
+
+            try
+            {
+                SqlDataReader dr = sqlCom.ExecuteReader();
+
+                //Enquanto for possível continuar a leitura das linhas que foram retornadas na consulta, execute.
+                while (dr.Read())
+                {
+                    int id = (int)dr["id"];
+                    string nome = (string)dr["nome"];
+                    string sala = (string)dr["sala"];
+                    DateTime data = (DateTime)dr["data"];
+                    string hora_entrada = (string)dr["horarioentrada"];
+                    string hora_saida = (string)dr["horariosaida"];
+
+                    ListViewItem lv = new ListViewItem(id.ToString());
+                    lv.SubItems.Add(nome);
+                    lv.SubItems.Add(sala);
+                    lv.SubItems.Add(data.ToShortDateString());
+                    lv.SubItems.Add(hora_entrada);
+                    lv.SubItems.Add(hora_saida);
+                    TABELA.Items.Add(lv);
+
+                }
+                dr.Close();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+            finally
+            {
+                conn.CloseConnection();
+            }
+        }
+
+
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -54,6 +101,8 @@ namespace Aula1
             txbSenha.Clear();
             mtbData.Clear();
 
+
+            UpdateListView();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -65,6 +114,9 @@ namespace Aula1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            UpdateListView();
+
+
 
         }
 
@@ -85,6 +137,13 @@ namespace Aula1
 
         private void label4_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+
 
         }
     }

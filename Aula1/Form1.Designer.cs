@@ -45,13 +45,20 @@
             this.mtbTelefone = new System.Windows.Forms.TextBox();
             this.mtbHE = new System.Windows.Forms.TextBox();
             this.mtbHS = new System.Windows.Forms.TextBox();
+            this.TABELA = new System.Windows.Forms.ListView();
+            this.ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.NOME = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.SALA = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.DATA = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.HORA_ENTRADA = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.HORA_SAIDA = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // btnMenssage
             // 
             this.btnMenssage.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnMenssage.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenssage.Location = new System.Drawing.Point(59, 405);
+            this.btnMenssage.Location = new System.Drawing.Point(192, 486);
             this.btnMenssage.Name = "btnMenssage";
             this.btnMenssage.Size = new System.Drawing.Size(109, 26);
             this.btnMenssage.TabIndex = 9;
@@ -77,17 +84,17 @@
             this.txbNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txbNome.Location = new System.Drawing.Point(59, 92);
             this.txbNome.Name = "txbNome";
-            this.txbNome.Size = new System.Drawing.Size(242, 20);
+            this.txbNome.Size = new System.Drawing.Size(448, 20);
             this.txbNome.TabIndex = 1;
             this.txbNome.TextChanged += new System.EventHandler(this.txbNome_TextChanged);
             // 
             // txbSenha
             // 
             this.txbSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbSenha.Location = new System.Drawing.Point(59, 369);
+            this.txbSenha.Location = new System.Drawing.Point(59, 316);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.PasswordChar = '*';
-            this.txbSenha.Size = new System.Drawing.Size(242, 20);
+            this.txbSenha.Size = new System.Drawing.Size(448, 20);
             this.txbSenha.TabIndex = 8;
             this.txbSenha.TextChanged += new System.EventHandler(this.txbPront_TextChanged);
             // 
@@ -96,7 +103,7 @@
             this.lblSenha.AutoSize = true;
             this.lblSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenha.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblSenha.Location = new System.Drawing.Point(57, 347);
+            this.lblSenha.Location = new System.Drawing.Point(57, 294);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(44, 13);
             this.lblSenha.TabIndex = 3;
@@ -117,7 +124,7 @@
             this.mtbCPF.Location = new System.Drawing.Point(59, 153);
             this.mtbCPF.Mask = "000,000,000-00";
             this.mtbCPF.Name = "mtbCPF";
-            this.mtbCPF.Size = new System.Drawing.Size(100, 20);
+            this.mtbCPF.Size = new System.Drawing.Size(87, 20);
             this.mtbCPF.TabIndex = 2;
             // 
             // lblTelefone
@@ -126,7 +133,7 @@
             this.lblTelefone.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTelefone.Location = new System.Drawing.Point(198, 130);
+            this.lblTelefone.Location = new System.Drawing.Point(341, 130);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(63, 13);
             this.lblTelefone.TabIndex = 31;
@@ -170,7 +177,7 @@
             this.lblHS.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.lblHS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHS.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblHS.Location = new System.Drawing.Point(58, 292);
+            this.lblHS.Location = new System.Drawing.Point(341, 242);
             this.lblHS.Name = "lblHS";
             this.lblHS.Size = new System.Drawing.Size(110, 13);
             this.lblHS.TabIndex = 38;
@@ -179,7 +186,7 @@
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(198, 192);
+            this.lblData.Location = new System.Drawing.Point(341, 193);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(36, 13);
             this.lblData.TabIndex = 40;
@@ -187,7 +194,7 @@
             // 
             // mtbData
             // 
-            this.mtbData.Location = new System.Drawing.Point(201, 208);
+            this.mtbData.Location = new System.Drawing.Point(344, 209);
             this.mtbData.Mask = "00/00/0000";
             this.mtbData.Name = "mtbData";
             this.mtbData.Size = new System.Drawing.Size(100, 20);
@@ -197,9 +204,9 @@
             // mtbTelefone
             // 
             this.mtbTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtbTelefone.Location = new System.Drawing.Point(201, 153);
+            this.mtbTelefone.Location = new System.Drawing.Point(344, 153);
             this.mtbTelefone.Name = "mtbTelefone";
-            this.mtbTelefone.Size = new System.Drawing.Size(100, 20);
+            this.mtbTelefone.Size = new System.Drawing.Size(163, 20);
             this.mtbTelefone.TabIndex = 3;
             // 
             // mtbHE
@@ -213,10 +220,52 @@
             // mtbHS
             // 
             this.mtbHS.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtbHS.Location = new System.Drawing.Point(61, 314);
+            this.mtbHS.Location = new System.Drawing.Point(344, 264);
             this.mtbHS.Name = "mtbHS";
             this.mtbHS.Size = new System.Drawing.Size(35, 20);
             this.mtbHS.TabIndex = 7;
+            // 
+            // TABELA
+            // 
+            this.TABELA.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ID,
+            this.NOME,
+            this.SALA,
+            this.DATA,
+            this.HORA_ENTRADA,
+            this.HORA_SAIDA});
+            this.TABELA.HideSelection = false;
+            this.TABELA.Location = new System.Drawing.Point(59, 360);
+            this.TABELA.Name = "TABELA";
+            this.TABELA.Size = new System.Drawing.Size(448, 97);
+            this.TABELA.TabIndex = 41;
+            this.TABELA.UseCompatibleStateImageBehavior = false;
+            this.TABELA.View = System.Windows.Forms.View.Details;
+            this.TABELA.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            // 
+            // ID
+            // 
+            this.ID.Text = "ID";
+            // 
+            // NOME
+            // 
+            this.NOME.Text = "NOME";
+            // 
+            // SALA
+            // 
+            this.SALA.Text = "SALA";
+            // 
+            // DATA
+            // 
+            this.DATA.Text = "DATA";
+            // 
+            // HORA_ENTRADA
+            // 
+            this.HORA_ENTRADA.Text = "HORA_ENTRADA";
+            // 
+            // HORA_SAIDA
+            // 
+            this.HORA_SAIDA.Text = "HORA_SAIDA";
             // 
             // Form1
             // 
@@ -224,6 +273,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.Controls.Add(this.TABELA);
             this.Controls.Add(this.mtbHS);
             this.Controls.Add(this.mtbHE);
             this.Controls.Add(this.mtbTelefone);
@@ -271,6 +321,13 @@
         private System.Windows.Forms.TextBox mtbTelefone;
         private System.Windows.Forms.TextBox mtbHE;
         private System.Windows.Forms.TextBox mtbHS;
+        private System.Windows.Forms.ListView TABELA;
+        private System.Windows.Forms.ColumnHeader ID;
+        private System.Windows.Forms.ColumnHeader NOME;
+        private System.Windows.Forms.ColumnHeader SALA;
+        private System.Windows.Forms.ColumnHeader DATA;
+        private System.Windows.Forms.ColumnHeader HORA_ENTRADA;
+        private System.Windows.Forms.ColumnHeader HORA_SAIDA;
     }
 }
 
