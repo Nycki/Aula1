@@ -98,7 +98,7 @@
             this.txbSenha.Location = new System.Drawing.Point(59, 266);
             this.txbSenha.Name = "txbSenha";
             this.txbSenha.PasswordChar = '*';
-            this.txbSenha.Size = new System.Drawing.Size(242, 20);
+            this.txbSenha.Size = new System.Drawing.Size(448, 20);
             this.txbSenha.TabIndex = 8;
             this.txbSenha.TextChanged += new System.EventHandler(this.txbPront_TextChanged);
             // 
@@ -128,7 +128,7 @@
             this.mtbCPF.Location = new System.Drawing.Point(59, 153);
             this.mtbCPF.Mask = "000,000,000-00";
             this.mtbCPF.Name = "mtbCPF";
-            this.mtbCPF.Size = new System.Drawing.Size(100, 20);
+            this.mtbCPF.Size = new System.Drawing.Size(87, 20);
             this.mtbCPF.TabIndex = 2;
             // 
             // lblTelefone
@@ -137,7 +137,7 @@
             this.lblTelefone.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.lblTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTelefone.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblTelefone.Location = new System.Drawing.Point(198, 130);
+            this.lblTelefone.Location = new System.Drawing.Point(341, 130);
             this.lblTelefone.Name = "lblTelefone";
             this.lblTelefone.Size = new System.Drawing.Size(63, 13);
             this.lblTelefone.TabIndex = 31;
@@ -190,7 +190,7 @@
             // lblData
             // 
             this.lblData.AutoSize = true;
-            this.lblData.Location = new System.Drawing.Point(198, 192);
+            this.lblData.Location = new System.Drawing.Point(341, 193);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(36, 13);
             this.lblData.TabIndex = 40;
@@ -198,7 +198,7 @@
             // 
             // mtbData
             // 
-            this.mtbData.Location = new System.Drawing.Point(201, 208);
+            this.mtbData.Location = new System.Drawing.Point(344, 209);
             this.mtbData.Mask = "00/00/0000";
             this.mtbData.Name = "mtbData";
             this.mtbData.Size = new System.Drawing.Size(100, 20);
@@ -208,7 +208,7 @@
             // mtbTelefone
             // 
             this.mtbTelefone.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mtbTelefone.Location = new System.Drawing.Point(201, 153);
+            this.mtbTelefone.Location = new System.Drawing.Point(344, 153);
             this.mtbTelefone.Name = "mtbTelefone";
             this.mtbTelefone.Size = new System.Drawing.Size(192, 20);
             this.mtbTelefone.TabIndex = 3;

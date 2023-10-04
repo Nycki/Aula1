@@ -113,6 +113,8 @@ namespace Aula1
             txbSenha.Clear();
             mtbData.Clear();
 
+
+            UpdateListView();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -124,6 +126,9 @@ namespace Aula1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            UpdateListView();
+
+
 
 
 
@@ -213,6 +218,8 @@ namespace Aula1
             txbSenha.Text = tabela.Items[index].SubItems[7].Text;
             mtbData.Text = tabela.Items[index].SubItems[8].Text;
             
+
+
 
         }
     }
