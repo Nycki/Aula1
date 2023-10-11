@@ -37,6 +37,25 @@ namespace Aula1
             _horariosaida = horariosaida;
             _senha = senha;
         }
+        public Usuario(int id,
+                string nome,
+                string cpf,
+                string telefone,
+                string sala,
+                DateTime data,
+                string horarioentrada,
+                string horariosaida,
+                string senha)
+        {
+            Id = Id;
+            _nome = nome;
+            _cpf = cpf;
+            _telefone = telefone;
+            _sala = sala;
+            _horarioentrada = horarioentrada;
+            _horariosaida = horariosaida;
+            _senha = senha;
+        }
         public int Id
         {
             set { _id = value; }
@@ -45,43 +64,70 @@ namespace Aula1
         }
         public string Nome
         {
-            set { _nome = value; }
+            set {
+                if (string.IsNullOrEmpty(value))
+                    throw new Exception("PREENCHA O CAMPO NOME");
+                
+                
+                
+                _nome = value; }
             get { return _nome; }
 
         }
         public string Cpf
         {
-            set { _cpf = value; }
+            set {
+                if (string.IsNullOrEmpty(value))
+                    throw new Exception("PREENCHA O CAMPO CPF");
+
+                _cpf = value; }
             get { return _cpf; }
 
         }
         public string Telefone
         {
-            set { _telefone = value; }
+            set {_telefone = value; }
             get { return _telefone; }
 
         }
         public string Sala
         {
-            set { _sala = value; }
+            set {
+                if (string.IsNullOrEmpty(value))
+                    throw new Exception("PREENCHA O CAMPO SALA");
+
+                _sala = value; }
             get { return _sala; }
 
         }
         public DateTime Data
         {
-            set { _data = value; }
+            set {
+                if (string.IsNullOrEmpty(value.ToShortDateString()))
+                    throw new Exception("PREENCHA O CAMPO DATA");
+
+
+                _data = value; }
             get { return _data; }
 
         }
         public string Horarioentrada
         {
-            set { _horarioentrada = value; }
+            set {
+                if (string.IsNullOrEmpty(value))
+                    throw new Exception("PREENCHA O CAMPO HORARIO DE ENTRADA");
+
+                _horarioentrada = value; }
             get { return _horarioentrada; }
 
         }
         public string Horariosaida
         {
-            set { _horariosaida = value; }
+            set {
+                if (string.IsNullOrEmpty(value))
+                    throw new Exception("PREENCHA O CAMPO HORARIO DE SAIDA");
+
+                _horariosaida = value; }
             get { return _horariosaida; }
 
         }
