@@ -60,13 +60,13 @@ namespace Aula1
             }
             catch (Exception err)
             {
-                MessageBox.Show(err.Message);
+                throw new Exception(err.Message);
             }
             finally
             {
                 conn.CloseConnection();
             }
-            return null;
+            return usuarios;
 
         }
         public void UpdateUsuario(Usuario usuario)
@@ -93,7 +93,7 @@ namespace Aula1
             sqlCommand.Parameters.AddWithValue("@horariosaida", usuario.Horariosaida);
             sqlCommand.Parameters.AddWithValue("@senha", usuario.Senha);
             sqlCommand.Parameters.AddWithValue("@data", usuario.Data);
-            sqlCommand.Parameters.AddWithValue("@id", Id); 
+            sqlCommand.Parameters.AddWithValue("@id", id); 
 
 
 
